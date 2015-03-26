@@ -137,7 +137,7 @@ public class BarcodeScanner extends CordovaPlugin {
                 }
                 //this.success(new PluginResult(PluginResult.Status.OK, obj), this.callback);
                 this.callbackContext.success(obj);
-            } else if (resultCode == Activity.RESULT_CANCELED) {
+            } /*else if (resultCode == Activity.RESULT_CANCELED) {
                 JSONObject obj = new JSONObject();
                 try {
                     obj.put(TEXT, "");
@@ -147,11 +147,11 @@ public class BarcodeScanner extends CordovaPlugin {
                     Log.d(LOG_TAG, "This should never happen");
                 }
                 //this.success(new PluginResult(PluginResult.Status.OK, obj), this.callback);
-                this.callbackContext.success(obj);
-            } else {
+                this.callbackContext.success(obj); }*/
+            /* else {
                 //this.error(new PluginResult(PluginResult.Status.ERROR), this.callback);
                 this.callbackContext.error("Unexpected error");
-            }
+            }*/
         }
     }
 
